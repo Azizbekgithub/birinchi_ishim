@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
     background-color: #324761;
-    position: relative;
 }
 a{
     text-decoration: none;
     font-family: sans-serif;
     font-size: 20px;
     color: #21AB6A;
-    position: relative;
     left: 80%;
 }
 div{
@@ -21,6 +21,7 @@ div{
     top: 190px;
     background-color: #191919;
     text-align: center;
+    position: relative;
 }
 h1{
     background-color: inherit;
@@ -61,7 +62,11 @@ h1{
     transition: .3s ease-in-out;
     border:3px solid #308765;
 }
-button{
+.night{
+    background-color: #2e2c2c;
+    color: coral;
+}
+.button{
     color: #CDE4E7;
     background-color: black;
     width: 130px;
@@ -71,12 +76,24 @@ button{
     margin-top: 10px;
     cursor: pointer;
     display: block;
-    left: 35%;
-    top: 8%;
+    margin: 30px auto;
 }
-button:hover{
+.button:hover{
     background: linear-gradient(45deg,#21AB6A,transparent);
     transition: .3s;
+}
+.link{
+    display: block;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    color: azure;
+    position: absolute;
+    bottom: 10%;
+    right: 50px;
+    cursor: pointer;
+    background-color: #324761;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
 }
 @media (max-width: 600px){
     div{
@@ -88,7 +105,7 @@ button:hover{
         width: 120px;
         height: 20px;
     }
-    button{
+    .button{
         width: 50px;
         height: 15px;
         margin-top: 5px;

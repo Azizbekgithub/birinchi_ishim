@@ -1,1 +1,1 @@
-salom torabek aka
+alert('ishlayapti')

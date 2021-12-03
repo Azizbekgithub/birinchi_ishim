@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #324761;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #21AB6A;
+    position: relative;
+    left: 80%;
+}
+div{
+    border: 1px solid #1A191B;
+    width: 450px;
+    height: 380px;
+    left: 33%;
+    top: 190px;
+    background-color: #191919;
+    text-align: center;
+}
+h1{
+    background-color: inherit;
+    color: #F4F5F5;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    top: 8%;
+}
+#username{
+    text-align: center;
+    background-color: inherit;
+    border:3px solid #4787AB;
+    border-radius: 25px;
+    width: 240px;
+    height: 45px;
+    margin: 10px 15px;
+    color: #fff;
+    top: 8%;
+}
+#username:focus{
+    width: 320px;
+    transition: .3s ease-in-out;
+    border:3px solid #308765;
+}
+#parol{
+    text-align: center;
+    background-color: inherit;
+    border:3px solid #4787AB;
+    border-radius: 25px;
+    width: 240px;
+    height: 45px;
+    margin: 10px 15px;
+    color: #fff;
+    top: 8%;
+}
+#parol:focus{
+    width:320px;
+    transition: .3s ease-in-out;
+    border:3px solid #308765;
+}
+button{
+    color: #CDE4E7;
+    background-color: black;
+    width: 130px;
+    height: 45px;
+    border-radius: 25px;
+    border: 3px solid #308765;
+    margin-top: 10px;
+    cursor: pointer;
+    display: block;
+    left: 35%;
+    top: 8%;
+}
+button:hover{
+    background: linear-gradient(45deg,#21AB6A,transparent);
+    transition: .3s;
+}
+@media (max-width: 600px){
+    div{
+        flex-wrap: wrap;
+        width: 200px;
+        height: 210px;
+    }
+    #username, #parol{
+        width: 120px;
+        height: 20px;
+    }
+    button{
+        width: 50px;
+        height: 15px;
+        margin-top: 5px;
+    }
+}
